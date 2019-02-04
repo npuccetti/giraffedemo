@@ -6,7 +6,19 @@
     },
     {
       "from": "ae58f986-87a4-4cf7-b410-fe4ff98d1774",
+      "to": "b03ed4aa-4112-4903-b4a7-41aefde9db83"
+    },
+    {
+      "from": "ee8acd64-4a2a-4061-b693-dc6481cad83d",
       "to": "5a52868"
+    },
+    {
+      "from": "1296cffb-ccff-4b37-89b5-d274ee00a567",
+      "to": "873cc614-ba67-4b29-8525-b2b07313f97f"
+    },
+    {
+      "from": "5a47080",
+      "to": "ffd9c909-bcbd-4953-8531-1c9ee864a43c"
     }
   ],
   "nodes": [
@@ -650,8 +662,8 @@
         }
       ],
       "position": [
-        -766.5029907226562,
-        -220.86343383789062
+        -522.4507751464844,
+        -230.82473754882812
       ],
       "title": {
         "code": [
@@ -673,144 +685,6 @@
         "name": "fsl_BET",
         "class": "fsl.BET",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#bet"
-      }
-    },
-    {
-      "category": [
-        "Nipype",
-        "afni",
-        "preprocess"
-      ],
-      "ports": [
-        {
-          "base": "in_file",
-          "editable": true,
-          "id": "c4872a19-568e-4166-8cf4-183ecb444d69",
-          "input": true,
-          "inputPort": "fe4cdb45-7c7e-4616-b3b4-ef90d61f4e7a",
-          "name": "in_file",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": true,
-          "iterator": false
-        },
-        {
-          "base": "out_file",
-          "editable": true,
-          "id": "f8b65510-46ce-4eca-be33-41f878a792a7",
-          "input": true,
-          "inputPort": "3b2fb0f7-9d09-4cb8-b615-4ee5c254a52d",
-          "name": "out_file",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "outputtype",
-          "editable": true,
-          "id": "e0f96768-fc88-4a82-b22b-c573f66daf54",
-          "input": true,
-          "inputPort": "34a75380-71fd-432c-b1be-08b39eb5589f",
-          "name": "outputtype",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "args",
-          "editable": true,
-          "id": "8da9945b-da3d-4d85-bb94-5a1440b636ac",
-          "input": true,
-          "inputPort": "5ba179fb-dfdf-4943-a7d3-8ae24dcb8fff",
-          "name": "args",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "environ",
-          "editable": true,
-          "id": "78c84e0d-40e4-40ff-8f32-71290970dcbd",
-          "input": true,
-          "inputPort": "75a4f6fb-217a-479e-9064-1a9945be4578",
-          "name": "environ",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "terminal_output",
-          "editable": true,
-          "id": "da1cafb7-d1c0-45fa-9c17-42f7f9cf2797",
-          "input": true,
-          "inputPort": "06f347aa-fed5-470f-a358-987e12196daf",
-          "name": "terminal_output",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "ignore_exception",
-          "editable": true,
-          "id": "a49fa325-e137-4990-b3a9-30d4f0314d94",
-          "input": true,
-          "inputPort": "76b6d4c1-1526-4e73-907b-3c90e6b7c0f7",
-          "name": "ignore_exception",
-          "output": false,
-          "outputPort": false,
-          "value": "",
-          "visible": false,
-          "iterator": false
-        },
-        {
-          "base": "out_file",
-          "editable": false,
-          "id": "565c0a00-5761-497c-a0f2-112106a11b06",
-          "input": false,
-          "inputPort": false,
-          "name": "out_file",
-          "output": true,
-          "outputPort": "d928ac47-9949-45fd-8722-f85a2bd95c6c",
-          "value": "",
-          "visible": true,
-          "iterator": false
-        }
-      ],
-      "position": [
-        -783.1284424783482,
-        -625.360382574806
-      ],
-      "title": {
-        "code": [
-          {
-            "language": "Nipype",
-            "comment": "Wraps command **3dDespike**",
-            "argument": {
-              "name": "afni.Despike()",
-              "import": "import nipype.interfaces.afni as afni"
-            }
-          },
-          {
-            "language": "Docker",
-            "argument": {
-              "name": "Nipype, afni"
-            }
-          }
-        ],
-        "name": "afni_Despike",
-        "class": "afni.Despike",
-        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.afni/preprocess.html#despike"
       }
     },
     {
@@ -1030,8 +904,8 @@
         }
       ],
       "position": [
-        -589.794845615135,
-        -622.1909504363289
+        -737.5543060643538,
+        -627.1716022917976
       ],
       "title": {
         "code": [
@@ -1259,8 +1133,8 @@
         }
       ],
       "position": [
-        -621.4888834806001,
-        -219.67673396636866
+        -754.3064188809907,
+        -229.63803767730616
       ],
       "title": {
         "code": [
@@ -1884,6 +1758,1322 @@
         "name": "fsl_Reorient2Std_1",
         "class": "fsl.Reorient2Std",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#reorient2std"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "fsl",
+        "preprocess"
+      ],
+      "ports": [
+        {
+          "base": "in_file",
+          "editable": true,
+          "id": "a902a3b0-30bf-4e1e-84ce-a67c709eb4b6",
+          "input": true,
+          "inputPort": "473b62e3-6efa-4d5c-845c-2461eb1e3c14",
+          "name": "in_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": true,
+          "id": "11ca388a-036e-45bb-8f7e-9af821aeeaaa",
+          "input": true,
+          "inputPort": "295665fc-437d-4b95-8260-c190dddd803a",
+          "name": "out_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "cost",
+          "editable": true,
+          "id": "4eab0dcd-dd26-4ee6-83c6-cfc647f783c3",
+          "input": true,
+          "inputPort": "5b6960e0-1481-486a-a5b6-4d2b5eccf950",
+          "name": "cost",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bins",
+          "editable": true,
+          "id": "73b9478e-bfd4-42b8-b411-da3932d54828",
+          "input": true,
+          "inputPort": "80e4f04c-9040-475b-abd5-b041104b33d6",
+          "name": "bins",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "dof",
+          "editable": true,
+          "id": "54122c09-39c7-4681-85ab-96ef958c9cf6",
+          "input": true,
+          "inputPort": "ac123e11-827b-4dd8-b97f-03d4fe6de8bd",
+          "name": "dof",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ref_vol",
+          "editable": true,
+          "id": "daba9c16-bd7a-4bc9-a6b5-bdb6a4719a7d",
+          "input": true,
+          "inputPort": "4834b4a8-75cb-4b50-9475-a6e2bc15e85c",
+          "name": "ref_vol",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "scaling",
+          "editable": true,
+          "id": "1069fe0a-fb9d-48db-9026-cd54e80eac9b",
+          "input": true,
+          "inputPort": "5acb9f47-28d6-41be-a93d-ba70596d4ba5",
+          "name": "scaling",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "smooth",
+          "editable": true,
+          "id": "0545287c-221f-40ff-b12f-28f62ff266e9",
+          "input": true,
+          "inputPort": "544dbba7-bcba-4b0e-af3e-18f895988bea",
+          "name": "smooth",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "rotation",
+          "editable": true,
+          "id": "b72466c9-3bf9-4550-8f61-c4fbbd2b8e3c",
+          "input": true,
+          "inputPort": "12b3320d-50f5-4139-a876-b2dc6b5ebc7c",
+          "name": "rotation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "stages",
+          "editable": true,
+          "id": "d1aa9430-e13d-4e96-9d55-d2d1d58a03d9",
+          "input": true,
+          "inputPort": "36c95408-af0b-4c6c-9f3b-23af1489a9a2",
+          "name": "stages",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "init",
+          "editable": true,
+          "id": "adee1288-d7bf-4a96-acbc-c52d7b357b25",
+          "input": true,
+          "inputPort": "1cad06b4-11ee-40c6-838a-181fc55e8100",
+          "name": "init",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "interpolation",
+          "editable": true,
+          "id": "a3255b67-d084-4062-880c-d05a68690b17",
+          "input": true,
+          "inputPort": "c9071198-35ec-418d-8675-5e9be7e000f0",
+          "name": "interpolation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_gradient",
+          "editable": true,
+          "id": "d98a9bea-118e-4191-91c0-1b5b278685cd",
+          "input": true,
+          "inputPort": "d6e7405f-5627-4346-ba29-80fc6cb33a2e",
+          "name": "use_gradient",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_contour",
+          "editable": true,
+          "id": "591e384a-ce26-43e8-bcea-095810a0a1a1",
+          "input": true,
+          "inputPort": "d74755dd-d261-437f-83df-eb1ae0469167",
+          "name": "use_contour",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "mean_vol",
+          "editable": true,
+          "id": "e00c5960-3dd6-44ab-b380-b4f290165cf2",
+          "input": true,
+          "inputPort": "10a70d9e-5c3f-4a2c-aa64-90a6cd38c963",
+          "name": "mean_vol",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "stats_imgs",
+          "editable": true,
+          "id": "139f5b9b-65d7-4162-861e-266dcbcb8d66",
+          "input": true,
+          "inputPort": "a1b39271-d44d-437f-aa7f-ca091c59af40",
+          "name": "stats_imgs",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "save_mats",
+          "editable": true,
+          "id": "e997cbe1-27b2-4cc8-bf94-bb0cbc168d61",
+          "input": true,
+          "inputPort": "99d73858-19b7-4f73-9fcc-fe66a73b35b4",
+          "name": "save_mats",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "save_plots",
+          "editable": true,
+          "id": "f3c58e5f-8e3f-4a7d-93d1-6bd44b5fb21a",
+          "input": true,
+          "inputPort": "0af2efe2-9809-4e9f-96f8-8eb3045346f6",
+          "name": "save_plots",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "save_rms",
+          "editable": true,
+          "id": "82dfe51c-5a45-4dde-adfd-cdd4093b9657",
+          "input": true,
+          "inputPort": "65c4dcdc-875d-4eb8-87b4-08c9650537be",
+          "name": "save_rms",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ref_file",
+          "editable": true,
+          "id": "80c072e4-749a-428c-941a-954e1a54d5bf",
+          "input": true,
+          "inputPort": "ca7a1bb8-3bd3-4463-a06e-7d7c312882ef",
+          "name": "ref_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "output_type",
+          "editable": true,
+          "id": "382b0fd8-aa2b-4342-a908-2ff7e875570d",
+          "input": true,
+          "inputPort": "8ff27b7b-338c-4417-b4e3-144d9cf78214",
+          "name": "output_type",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "args",
+          "editable": true,
+          "id": "4014f5fe-8e89-4656-b6a7-7407226eb523",
+          "input": true,
+          "inputPort": "37782b98-8bb8-4ed4-886e-793d7d9fd2c8",
+          "name": "args",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "environ",
+          "editable": true,
+          "id": "7d42319a-3957-486e-aaf2-edd495511ba2",
+          "input": true,
+          "inputPort": "a9fe9855-e28b-4834-9444-90475cc7ac94",
+          "name": "environ",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "terminal_output",
+          "editable": true,
+          "id": "af15e595-4017-4659-aa97-f846113cc523",
+          "input": true,
+          "inputPort": "2c9832d0-d8d2-40e8-9f7f-d6e531271d90",
+          "name": "terminal_output",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "4af14ada-074c-4608-bd2b-e87a128fee6d",
+          "input": true,
+          "inputPort": "8a0cec67-ad20-4821-9905-b4064ae2c0ec",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": false,
+          "id": "f2fc1fc2-edc6-40a7-bab4-6be4e75b88bd",
+          "input": false,
+          "inputPort": false,
+          "name": "out_file",
+          "output": true,
+          "outputPort": "1296cffb-ccff-4b37-89b5-d274ee00a567",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "variance_img",
+          "editable": false,
+          "id": "fdf648b9-1fdd-4344-b204-46ce52e088ad",
+          "input": false,
+          "inputPort": false,
+          "name": "variance_img",
+          "output": true,
+          "outputPort": "d18f2955-67e8-443b-a5b2-d30ac5d7a6eb",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "std_img",
+          "editable": false,
+          "id": "5ca3230d-75da-49fe-ba98-052ff82ad9c2",
+          "input": false,
+          "inputPort": false,
+          "name": "std_img",
+          "output": true,
+          "outputPort": "5d76e87f-18a8-40d0-a69a-5d598d704bb7",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "mean_img",
+          "editable": false,
+          "id": "7a40f39f-0bcd-467c-8a7f-19eb77b3f7e9",
+          "input": false,
+          "inputPort": false,
+          "name": "mean_img",
+          "output": true,
+          "outputPort": "7a2259bb-74df-42ff-b4b9-4a3a41ca88bc",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "par_file",
+          "editable": false,
+          "id": "e640a852-6abf-4f66-858d-a2767fd30102",
+          "input": false,
+          "inputPort": false,
+          "name": "par_file",
+          "output": true,
+          "outputPort": "f9f9a44c-d727-4f7e-8cb3-30b4f83a877f",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "mat_file",
+          "editable": false,
+          "id": "44f40e69-55ed-44f2-8b86-98c0c9b778ff",
+          "input": false,
+          "inputPort": false,
+          "name": "mat_file",
+          "output": true,
+          "outputPort": "cf6e0a10-4132-47d7-9e50-e48e06df384d",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "rms_files",
+          "editable": false,
+          "id": "214e48b4-a885-44c0-8d1f-f9057afdc199",
+          "input": false,
+          "inputPort": false,
+          "name": "rms_files",
+          "output": true,
+          "outputPort": "73cc85fc-a11e-4816-9b57-3f26954a1ecf",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -526.5497938353587,
+        -683.001986071417
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Wraps command **mcflirt**",
+            "argument": {
+              "name": "fsl.MCFLIRT()",
+              "import": "import nipype.interfaces.fsl as fsl"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, fsl"
+            }
+          }
+        ],
+        "name": "fsl_MCFLIRT",
+        "class": "fsl.MCFLIRT",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/preprocess.html#mcflirt"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "ants",
+        "registration"
+      ],
+      "ports": [
+        {
+          "base": "fixed_image",
+          "editable": true,
+          "id": "2f8e48c6-bd4f-4a79-a69c-abda10321666",
+          "input": true,
+          "inputPort": "ffd9c909-bcbd-4953-8531-1c9ee864a43c",
+          "name": "fixed_image",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "moving_image",
+          "editable": true,
+          "id": "aff30412-d40c-4936-8f75-bd55c117d391",
+          "input": true,
+          "inputPort": "873cc614-ba67-4b29-8525-b2b07313f97f",
+          "name": "moving_image",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "metric",
+          "editable": true,
+          "id": "86414ea6-caa6-4bba-9926-09126dda6928",
+          "input": true,
+          "inputPort": "8d3452fa-86b0-43b7-9f80-bcfa113f761d",
+          "name": "metric",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "metric_weight",
+          "editable": true,
+          "id": "614bd1c9-a501-4471-a934-53deff53b58d",
+          "input": true,
+          "inputPort": "9c521a06-880b-4bba-b7d1-168b90e9c28d",
+          "name": "metric_weight",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "transforms",
+          "editable": true,
+          "id": "4c043e28-876a-425e-a130-4d6616970abd",
+          "input": true,
+          "inputPort": "43280f14-18e0-43bf-9e28-b06a8a810cbf",
+          "name": "transforms",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "smoothing_sigmas",
+          "editable": true,
+          "id": "dfb5182f-ca29-44d3-8f1b-92820138ef41",
+          "input": true,
+          "inputPort": "3657b105-0a38-4121-829d-ed91a7a3d9d1",
+          "name": "smoothing_sigmas",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "shrink_factors",
+          "editable": true,
+          "id": "3a3321ae-a7e7-4640-afd9-a0183818d1bd",
+          "input": true,
+          "inputPort": "67aa190c-d2d8-4bdc-8f5d-4926339c5b89",
+          "name": "shrink_factors",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "dimension",
+          "editable": true,
+          "id": "33471a76-4a47-4e70-99f8-ee62113450e1",
+          "input": true,
+          "inputPort": "efef4051-b2b6-4a4e-abbf-aa975a19442c",
+          "name": "dimension",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "fixed_image_mask",
+          "editable": true,
+          "id": "d0c399cf-9bcd-45f6-be5d-03db8cdf6a0d",
+          "input": true,
+          "inputPort": "9b98fbbe-7020-4df6-b194-80424c5abaaf",
+          "name": "fixed_image_mask",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "fixed_image_masks",
+          "editable": true,
+          "id": "7339b77e-e9bd-4faf-8ee8-bdd4a49a703a",
+          "input": true,
+          "inputPort": "8cc5eb7a-9c90-4562-94f9-1b1e06be5c68",
+          "name": "fixed_image_masks",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "moving_image_mask",
+          "editable": true,
+          "id": "bf2940d7-85ce-42a4-8d26-5ad5a37ee87f",
+          "input": true,
+          "inputPort": "f83651e1-4966-428b-be1f-396fc0832b3b",
+          "name": "moving_image_mask",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "moving_image_masks",
+          "editable": true,
+          "id": "e8732d5f-f17f-4fec-ae8b-a8402b3f8a6d",
+          "input": true,
+          "inputPort": "ae039721-a38d-4c3b-b570-1c35d0feb1be",
+          "name": "moving_image_masks",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "save_state",
+          "editable": true,
+          "id": "9cff55d0-fb98-4e30-a604-d2a4e364069c",
+          "input": true,
+          "inputPort": "349b7970-1501-4c8f-b16f-4e5a48660da8",
+          "name": "save_state",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "restore_state",
+          "editable": true,
+          "id": "7ceadcac-e7d4-471c-a441-454d452c6858",
+          "input": true,
+          "inputPort": "790ef28d-494a-4742-a476-11e14108e7df",
+          "name": "restore_state",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "initial_moving_transform",
+          "editable": true,
+          "id": "4c7bd4b6-fd28-4dee-a409-dbe3c21f604c",
+          "input": true,
+          "inputPort": "351a8400-dba6-4c7a-bafa-9aab9d249b8e",
+          "name": "initial_moving_transform",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "invert_initial_moving_transform",
+          "editable": true,
+          "id": "33545620-85aa-4764-aef0-538510d18a14",
+          "input": true,
+          "inputPort": "a123a964-6c4a-4d1b-8e43-32d216cf6445",
+          "name": "invert_initial_moving_transform",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "initial_moving_transform_com",
+          "editable": true,
+          "id": "8f1d6f80-af71-4284-90b8-a098dd81d4e1",
+          "input": true,
+          "inputPort": "9f518378-3c0d-4b26-9c2d-8316d9ad1622",
+          "name": "initial_moving_transform_com",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "metric_item_trait",
+          "editable": true,
+          "id": "373f68a1-4928-41a8-8392-19e15529279a",
+          "input": true,
+          "inputPort": "a5ce963f-8ba6-4335-b456-890874391ebe",
+          "name": "metric_item_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "metric_stage_trait",
+          "editable": true,
+          "id": "2fd694f8-d142-45e0-96b2-1f3f3fea9f5f",
+          "input": true,
+          "inputPort": "24cde92c-bc32-490b-84ac-e675b9598cc9",
+          "name": "metric_stage_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "metric_weight_item_trait",
+          "editable": true,
+          "id": "63316447-22e5-4281-a6dd-da73b1100e02",
+          "input": true,
+          "inputPort": "6bffc6ec-a020-4dc6-bc25-e9debb64e756",
+          "name": "metric_weight_item_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "metric_weight_stage_trait",
+          "editable": true,
+          "id": "e3464e54-6d88-4515-965a-919381d1c9bf",
+          "input": true,
+          "inputPort": "84041de8-9f28-462b-abfa-cd6133caa049",
+          "name": "metric_weight_stage_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "radius_bins_item_trait",
+          "editable": true,
+          "id": "5e2e8385-fef1-4a2a-984a-dd56dfaaa648",
+          "input": true,
+          "inputPort": "e84f0efa-4096-4ab3-87cc-ba5ead8ad398",
+          "name": "radius_bins_item_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "radius_bins_stage_trait",
+          "editable": true,
+          "id": "a6d3f85f-56f0-4732-b7cd-70fcd377932a",
+          "input": true,
+          "inputPort": "70fbf509-d6df-496b-aa20-7af4286c24b0",
+          "name": "radius_bins_stage_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "radius_or_number_of_bins",
+          "editable": true,
+          "id": "89717f98-5f2c-4783-ad39-9144953561f9",
+          "input": true,
+          "inputPort": "fca79284-4be0-415f-916a-5d326cf50b79",
+          "name": "radius_or_number_of_bins",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sampling_strategy_item_trait",
+          "editable": true,
+          "id": "112a2a56-ea2e-429b-940b-ffed344c3f1a",
+          "input": true,
+          "inputPort": "9735cc92-ab63-457d-b753-7075c855205f",
+          "name": "sampling_strategy_item_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sampling_strategy_stage_trait",
+          "editable": true,
+          "id": "d4d4ba35-3fda-47e2-ab11-d9b687569cb9",
+          "input": true,
+          "inputPort": "dcb10959-dce4-4ac8-8aea-2d97b60b355e",
+          "name": "sampling_strategy_stage_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sampling_strategy",
+          "editable": true,
+          "id": "352c07a9-bea9-45b5-83fa-df74ff1f54c5",
+          "input": true,
+          "inputPort": "c1a149b7-0da3-4222-96f2-eb1d353c8008",
+          "name": "sampling_strategy",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sampling_percentage_item_trait",
+          "editable": true,
+          "id": "6ca52d57-a113-4b43-8ec7-efd6f82172bd",
+          "input": true,
+          "inputPort": "aef3bfd8-457c-4807-bc9b-2918ce95dbf7",
+          "name": "sampling_percentage_item_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sampling_percentage_stage_trait",
+          "editable": true,
+          "id": "b502926f-dd94-4f0d-afdc-7fc66b181e68",
+          "input": true,
+          "inputPort": "d94208fc-1d3b-414a-9175-e44b609aab64",
+          "name": "sampling_percentage_stage_trait",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sampling_percentage",
+          "editable": true,
+          "id": "fa4494d7-3a33-4c6b-bf89-387297716a0d",
+          "input": true,
+          "inputPort": "3615404e-a3d7-4da1-a209-b18f8c2d5592",
+          "name": "sampling_percentage",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_estimate_learning_rate_once",
+          "editable": true,
+          "id": "cf358141-db41-4613-a587-685e37ae1cf3",
+          "input": true,
+          "inputPort": "a57a5805-e47e-4b6f-9c50-f07996843edc",
+          "name": "use_estimate_learning_rate_once",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "use_histogram_matching",
+          "editable": true,
+          "id": "5181abdb-c3b9-4af5-8a1f-9e45ca07b827",
+          "input": true,
+          "inputPort": "3ce814d1-007d-467b-9e33-9162819051e7",
+          "name": "use_histogram_matching",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "interpolation",
+          "editable": true,
+          "id": "1d15b39f-87ce-4e2a-ab52-e85b9da004c2",
+          "input": true,
+          "inputPort": "d6915567-9b71-4eeb-b278-af06b4771a02",
+          "name": "interpolation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "interpolation_parameters",
+          "editable": true,
+          "id": "39fa8350-d1a3-4d93-8f68-9bf93c8645ba",
+          "input": true,
+          "inputPort": "0b7c88f8-75a2-4de3-94eb-73daf317d6fd",
+          "name": "interpolation_parameters",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "write_composite_transform",
+          "editable": true,
+          "id": "3a1f83b8-d206-428e-aff3-298164ec035d",
+          "input": true,
+          "inputPort": "5f192279-de13-41ce-b4e4-e1ae14825d2d",
+          "name": "write_composite_transform",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "collapse_output_transforms",
+          "editable": true,
+          "id": "711b251d-9bc4-4550-9270-a99307da2a6b",
+          "input": true,
+          "inputPort": "93ca7cac-f17d-42ea-b702-bcd15fa0714b",
+          "name": "collapse_output_transforms",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "initialize_transforms_per_stage",
+          "editable": true,
+          "id": "43368e83-15d9-45a4-a30a-9ff38b8540eb",
+          "input": true,
+          "inputPort": "54f7b9ce-adb5-4392-a092-cfbda2397edc",
+          "name": "initialize_transforms_per_stage",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "float",
+          "editable": true,
+          "id": "ff164540-ba6a-431a-a991-60454283f9b9",
+          "input": true,
+          "inputPort": "a610d29c-1f58-413b-a0f2-e4ab51905e89",
+          "name": "float",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "transform_parameters",
+          "editable": true,
+          "id": "975bdcc6-9aaf-4ce0-b20c-73455296b09a",
+          "input": true,
+          "inputPort": "12ed0c59-434c-42be-965f-e383976e0ae9",
+          "name": "transform_parameters",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "restrict_deformation",
+          "editable": true,
+          "id": "8768844a-746c-4b2f-8a4b-80aa05ebd4e8",
+          "input": true,
+          "inputPort": "e1df167d-cac0-4d6f-9881-cea2a692316c",
+          "name": "restrict_deformation",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "number_of_iterations",
+          "editable": true,
+          "id": "ac949fd1-dd11-4800-96f7-fe74bc175a38",
+          "input": true,
+          "inputPort": "0b9a99ad-76e1-4192-8eca-7437f4ac1c22",
+          "name": "number_of_iterations",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "sigma_units",
+          "editable": true,
+          "id": "9fabb94d-4ac9-45b4-af50-3a70f83ead30",
+          "input": true,
+          "inputPort": "ca9f5fc8-131d-4088-b53a-d787f6a056c0",
+          "name": "sigma_units",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "convergence_threshold",
+          "editable": true,
+          "id": "02897498-0e5f-4f50-ba8c-c39468556cd4",
+          "input": true,
+          "inputPort": "ac390f7e-e57d-4597-8e82-98ea871e15bc",
+          "name": "convergence_threshold",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "convergence_window_size",
+          "editable": true,
+          "id": "34197366-0f8e-4465-a3bc-d1e1824a1ad4",
+          "input": true,
+          "inputPort": "03df6122-cffd-44ab-b79c-c1ee515f3a20",
+          "name": "convergence_window_size",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "output_transform_prefix",
+          "editable": true,
+          "id": "e79a5675-11fa-4276-9562-0b90a4228fb2",
+          "input": true,
+          "inputPort": "bc5a36d8-5937-4183-8875-3f8d2878663a",
+          "name": "output_transform_prefix",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "output_warped_image",
+          "editable": true,
+          "id": "773ea177-2c72-46ee-a5ce-01ac444060f6",
+          "input": true,
+          "inputPort": "90ab3d1f-1880-45d7-9a37-172dab39a657",
+          "name": "output_warped_image",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "output_inverse_warped_image",
+          "editable": true,
+          "id": "4ca92e31-33a3-4e09-a080-9b170e77a396",
+          "input": true,
+          "inputPort": "18183cd9-5ab9-4761-9cc7-24c8d50780b5",
+          "name": "output_inverse_warped_image",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "winsorize_upper_quantile",
+          "editable": true,
+          "id": "2c308158-e458-423e-9030-e141c1f959de",
+          "input": true,
+          "inputPort": "c9059387-c614-4197-8714-d9a09b7426db",
+          "name": "winsorize_upper_quantile",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "winsorize_lower_quantile",
+          "editable": true,
+          "id": "c62d15f7-9147-4b0d-8e1b-661775b37fd7",
+          "input": true,
+          "inputPort": "e60475bd-1206-4fd5-88ab-26c94cda4ff8",
+          "name": "winsorize_lower_quantile",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "verbose",
+          "editable": true,
+          "id": "0a9d2475-5c36-481b-80e5-3ae2cbc05617",
+          "input": true,
+          "inputPort": "2d8529f9-be73-4e54-ab61-be987400ca50",
+          "name": "verbose",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "num_threads",
+          "editable": true,
+          "id": "479511c0-7852-4648-95c9-90b930d25559",
+          "input": true,
+          "inputPort": "7fd1b633-fa05-4f5c-b887-e06f2a7e8acd",
+          "name": "num_threads",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "args",
+          "editable": true,
+          "id": "74358266-5676-49ae-a04a-eec1d76a508f",
+          "input": true,
+          "inputPort": "d65bfa31-26f9-4b2e-ba81-457cbea60252",
+          "name": "args",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "environ",
+          "editable": true,
+          "id": "7a1fb883-3206-456c-a5ab-2807d33ef042",
+          "input": true,
+          "inputPort": "e760ca1d-7be5-415a-b884-3ff7318b104e",
+          "name": "environ",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "terminal_output",
+          "editable": true,
+          "id": "b6155117-2a10-4b59-9616-465fdd77fa24",
+          "input": true,
+          "inputPort": "e1375fe1-423c-4e7a-b0c9-af51b86ca285",
+          "name": "terminal_output",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "617d39d5-9180-4a9c-ae1b-1d32a0367e2b",
+          "input": true,
+          "inputPort": "be95d799-4072-4d46-a33f-ae4274a2a781",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "forward_transforms",
+          "editable": false,
+          "id": "e6cc12ac-5b0f-4764-b676-455c1b88fe94",
+          "input": false,
+          "inputPort": false,
+          "name": "forward_transforms",
+          "output": true,
+          "outputPort": "657f5d4a-d84e-4567-a045-66dfe9ea91f7",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "reverse_transforms",
+          "editable": false,
+          "id": "9e286709-6f17-41fa-9837-79af159a7b45",
+          "input": false,
+          "inputPort": false,
+          "name": "reverse_transforms",
+          "output": true,
+          "outputPort": "e402a755-f5cd-4cc2-8dbb-88ef06bf03ae",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "forward_invert_flags",
+          "editable": false,
+          "id": "890ec154-ba8e-483b-9afd-70b0bd4ff653",
+          "input": false,
+          "inputPort": false,
+          "name": "forward_invert_flags",
+          "output": true,
+          "outputPort": "867a8bf0-9660-4c4f-a1a7-5527de1b5e17",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "reverse_invert_flags",
+          "editable": false,
+          "id": "18a2a0d7-b408-4427-9fcd-860435f6262a",
+          "input": false,
+          "inputPort": false,
+          "name": "reverse_invert_flags",
+          "output": true,
+          "outputPort": "90771445-df40-496c-83b3-9029bb787960",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "composite_transform",
+          "editable": false,
+          "id": "783c74be-3061-4602-98f3-b8252bc27d08",
+          "input": false,
+          "inputPort": false,
+          "name": "composite_transform",
+          "output": true,
+          "outputPort": "fe94ca60-14de-453b-9285-58421d8c80bd",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "inverse_composite_transform",
+          "editable": false,
+          "id": "6f376855-9685-4fb5-9833-4247a809485b",
+          "input": false,
+          "inputPort": false,
+          "name": "inverse_composite_transform",
+          "output": true,
+          "outputPort": "8fe997af-cc4c-4f7b-aece-68e5d0c52144",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "warped_image",
+          "editable": false,
+          "id": "80cfcdcd-ce51-4dd6-ac5c-2c3178fa3f6f",
+          "input": false,
+          "inputPort": false,
+          "name": "warped_image",
+          "output": true,
+          "outputPort": "0ac986b3-4d54-4a79-bc7d-91c73135f044",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "inverse_warped_image",
+          "editable": false,
+          "id": "65c94efb-9321-47d8-a151-06437cba5f74",
+          "input": false,
+          "inputPort": false,
+          "name": "inverse_warped_image",
+          "output": true,
+          "outputPort": "1f3c328d-3db3-4914-a34d-bfe76d791aae",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "save_state",
+          "editable": false,
+          "id": "d6c1a504-1d40-464a-a5c5-f420fa5dffc5",
+          "input": false,
+          "inputPort": false,
+          "name": "save_state",
+          "output": true,
+          "outputPort": "54055616-c92c-4252-a5c5-8b7080f2c66e",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -257.59428989733175,
+        -678.0212972376951
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Wraps command **antsRegistration**",
+            "argument": {
+              "name": "ants.Registration()",
+              "import": "import nipype.interfaces.ants as ants"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, ants"
+            }
+          }
+        ],
+        "name": "ants_Registration",
+        "class": "ants.Registration",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.ants/registration.html#registration"
       }
     }
   ],

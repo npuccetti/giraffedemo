@@ -8,6 +8,7 @@ import nipype.pipeline as pe
 import nipype.interfaces.io as io
 import nipype.interfaces.fsl as fsl
 import nipype.interfaces.afni as afni
+import nipype.interfaces.ants as ants
 
 #Generic datagrabber module that wraps around glob in an
 io_S3DataGrabber = pe.Node(io.S3DataGrabber(outfields=["outfiles"]), name = 'io_S3DataGrabber')
@@ -20,9 +21,6 @@ io_S3DataGrabber.inputs.local_directory = '/tmp'
 
 #Wraps command **bet**
 fsl_BET = pe.Node(interface = fsl.BET(), name='fsl_BET', iterfield = [''])
-
-#Wraps command **3dDespike**
-afni_Despike = pe.Node(interface = afni.Despike(), name='afni_Despike', iterfield = [''])
 
 #Wraps command **3dTshift**
 afni_TShift = pe.Node(interface = afni.TShift(), name='afni_TShift', iterfield = [''])
@@ -42,10 +40,19 @@ fsl_Reorient2Std = pe.Node(interface = fsl.Reorient2Std(), name='fsl_Reorient2St
 #Wraps command **fslreorient2std**
 fsl_Reorient2Std_1 = pe.Node(interface = fsl.Reorient2Std(), name='fsl_Reorient2Std_1', iterfield = [''])
 
+#Wraps command **mcflirt**
+fsl_MCFLIRT = pe.Node(interface = fsl.MCFLIRT(), name='fsl_MCFLIRT', iterfield = [''])
+
+#Wraps command **antsRegistration**
+ants_Registration = pe.Node(interface = ants.Registration(), name='ants_Registration', iterfield = [''])
+
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
 analysisflow.connect(io_S3DataGrabber, "outfiles", fsl_Reorient2Std, "in_file")
-analysisflow.connect(fsl_Reorient2Std, "out_file", fsl_BET, "in_file")
+analysisflow.connect(fsl_Reorient2Std, "out_file", afni_Unifize, "in_file")
+analysisflow.connect(afni_Unifize, "out_file", fsl_BET, "in_file")
+analysisflow.connect(fsl_MCFLIRT, "out_file", ants_Registration, "moving_image")
+analysisflow.connect(fsl_BET, "out_file", ants_Registration, "fixed_image")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here
