@@ -36,9 +36,16 @@ io_S3DataGrabber_1 = pe.Node(io.S3DataGrabber(), name = 'io_S3DataGrabber_1')
 #Generic datagrabber module that wraps around glob in an
 io_S3DataGrabber_2 = pe.Node(io.S3DataGrabber(), name = 'io_S3DataGrabber_2')
 
+#Wraps command **fslreorient2std**
+fsl_Reorient2Std = pe.Node(interface = fsl.Reorient2Std(), name='fsl_Reorient2Std', iterfield = [''])
+
+#Wraps command **fslreorient2std**
+fsl_Reorient2Std_1 = pe.Node(interface = fsl.Reorient2Std(), name='fsl_Reorient2Std_1', iterfield = [''])
+
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
-analysisflow.connect(io_S3DataGrabber, "outfiles", fsl_BET, "in_file")
+analysisflow.connect(io_S3DataGrabber, "outfiles", fsl_Reorient2Std, "in_file")
+analysisflow.connect(fsl_Reorient2Std, "out_file", fsl_BET, "in_file")
 
 #Run the workflow
 plugin = 'MultiProc' #adjust your desired plugin here

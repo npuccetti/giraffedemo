@@ -2,6 +2,10 @@
   "links": [
     {
       "from": "541de58",
+      "to": "5fe9a6dd-3247-4a7f-a4d3-27cfc0594e47"
+    },
+    {
+      "from": "ae58f986-87a4-4cf7-b410-fe4ff98d1774",
       "to": "5a52868"
     }
   ],
@@ -157,8 +161,8 @@
         }
       ],
       "position": [
-        -1173.77099609375,
-        -297.4917907714844
+        -1287.86962890625,
+        -287.98358154296875
       ],
       "title": {
         "code": [
@@ -646,8 +650,8 @@
         }
       ],
       "position": [
-        -823.5523071289062,
-        -214.52462768554688
+        -766.5029907226562,
+        -220.86343383789062
       ],
       "title": {
         "code": [
@@ -784,8 +788,8 @@
         }
       ],
       "position": [
-        -856.0247437478795,
-        -600.005157965431
+        -783.1284424783482,
+        -625.360382574806
       ],
       "title": {
         "code": [
@@ -1026,8 +1030,8 @@
         }
       ],
       "position": [
-        -608.8112640721663,
-        -596.835756344532
+        -589.794845615135,
+        -622.1909504363289
       ],
       "title": {
         "code": [
@@ -1581,8 +1585,8 @@
         }
       ],
       "position": [
-        -1182.4733618049825,
-        -613.9208393519949
+        -1315.5882910042012,
+        -610.7514667934012
       ],
       "title": {
         "code": [
@@ -1604,6 +1608,282 @@
         "name": "io_S3DataGrabber_2",
         "class": "io.S3DataGrabber",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "fsl",
+        "utils"
+      ],
+      "ports": [
+        {
+          "base": "in_file",
+          "editable": true,
+          "id": "a9b363bd-4be1-430d-8fcb-9042d7236dcc",
+          "input": true,
+          "inputPort": "5fe9a6dd-3247-4a7f-a4d3-27cfc0594e47",
+          "name": "in_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": true,
+          "id": "46e1deef-2dac-4120-81d8-42fcc4c2357f",
+          "input": true,
+          "inputPort": "e6cd5300-6928-4d57-b01c-1f2f0c0b74f1",
+          "name": "out_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "output_type",
+          "editable": true,
+          "id": "396c503f-51c3-441a-929b-62b28b028bdb",
+          "input": true,
+          "inputPort": "a9d96fb2-6118-4065-af77-620d45ae7b5e",
+          "name": "output_type",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "args",
+          "editable": true,
+          "id": "303f8216-ed52-4269-bfe7-842435010078",
+          "input": true,
+          "inputPort": "b427a543-3ed7-41ae-8a08-e194967c686a",
+          "name": "args",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "environ",
+          "editable": true,
+          "id": "4ac0dc14-82af-4e3c-b4e0-a1ceeb13074c",
+          "input": true,
+          "inputPort": "8857030e-58f3-435d-bf9d-d931a346f34b",
+          "name": "environ",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "terminal_output",
+          "editable": true,
+          "id": "52477d17-3b6d-4cc6-8543-fe8423072094",
+          "input": true,
+          "inputPort": "fe2af54f-f91f-4c4e-a985-eebb9e7c4be6",
+          "name": "terminal_output",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "010a7db8-455f-4300-a716-d64893bf4ba4",
+          "input": true,
+          "inputPort": "ac0fd15b-b7f7-4d6a-8141-94f2622ea8fc",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": false,
+          "id": "54130ac6-3dc1-444d-9aec-51f9c1d62ac0",
+          "input": false,
+          "inputPort": false,
+          "name": "out_file",
+          "output": true,
+          "outputPort": "ae58f986-87a4-4cf7-b410-fe4ff98d1774",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -1023.2491156872193,
+        -173.79707355430554
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Wraps command **fslreorient2std**",
+            "argument": {
+              "name": "fsl.Reorient2Std()",
+              "import": "import nipype.interfaces.fsl as fsl"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, fsl"
+            }
+          }
+        ],
+        "name": "fsl_Reorient2Std",
+        "class": "fsl.Reorient2Std",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#reorient2std"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "fsl",
+        "utils"
+      ],
+      "ports": [
+        {
+          "base": "in_file",
+          "editable": true,
+          "id": "9af152b9-ff18-4821-ab37-d5f78e7ace0c",
+          "input": true,
+          "inputPort": "de57d434-3fe6-47b6-89b8-8b0ee9b59e73",
+          "name": "in_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": true,
+          "id": "f1ab439c-65b7-418e-a8ac-febd918b8e2d",
+          "input": true,
+          "inputPort": "5658374e-5a2a-4e35-889f-ce0ff6884b6b",
+          "name": "out_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "output_type",
+          "editable": true,
+          "id": "a6eaea70-5b17-4252-b448-6ea152d62bcb",
+          "input": true,
+          "inputPort": "e2d90ef0-10a8-4ff9-a6ec-0eb93f08fa56",
+          "name": "output_type",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "args",
+          "editable": true,
+          "id": "b5c510c1-8265-416d-a0e5-0f828e0a8006",
+          "input": true,
+          "inputPort": "67f2c981-b22f-4139-8d8e-407ced147e28",
+          "name": "args",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "environ",
+          "editable": true,
+          "id": "79a90948-60db-4e28-b9a2-4a3d41235308",
+          "input": true,
+          "inputPort": "d83b44d0-d36b-49ba-807b-95c08c07fb54",
+          "name": "environ",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "terminal_output",
+          "editable": true,
+          "id": "29585df3-c10f-4187-8e04-0e461a76f5f8",
+          "input": true,
+          "inputPort": "45ec4a26-e506-432e-a196-fdf3f65d1c91",
+          "name": "terminal_output",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "e1f8e210-4b30-46d8-a3ad-e943cb5cc919",
+          "input": true,
+          "inputPort": "e14b6236-27d8-4f73-8eef-993ea4717643",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": false,
+          "id": "99569d84-20ec-4f32-ab5c-65d154e0cd7a",
+          "input": false,
+          "inputPort": false,
+          "name": "out_file",
+          "output": true,
+          "outputPort": "466a9044-cdbd-4c0c-8557-8e3996214f1c",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -1049.3583937984838,
+        -628.5298190359473
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Wraps command **fslreorient2std**",
+            "argument": {
+              "name": "fsl.Reorient2Std()",
+              "import": "import nipype.interfaces.fsl as fsl"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, fsl"
+            }
+          }
+        ],
+        "name": "fsl_Reorient2Std_1",
+        "class": "fsl.Reorient2Std",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.fsl/utils.html#reorient2std"
       }
     }
   ],
