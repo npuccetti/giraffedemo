@@ -27,6 +27,15 @@ afni_Despike = pe.Node(interface = afni.Despike(), name='afni_Despike', iterfiel
 #Wraps command **3dTshift**
 afni_TShift = pe.Node(interface = afni.TShift(), name='afni_TShift', iterfield = [''])
 
+#Wraps command **3dUnifize**
+afni_Unifize = pe.Node(interface = afni.Unifize(), name='afni_Unifize', iterfield = [''])
+
+#Generic datagrabber module that wraps around glob in an
+io_S3DataGrabber_1 = pe.Node(io.S3DataGrabber(), name = 'io_S3DataGrabber_1')
+
+#Generic datagrabber module that wraps around glob in an
+io_S3DataGrabber_2 = pe.Node(io.S3DataGrabber(), name = 'io_S3DataGrabber_2')
+
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
 analysisflow.connect(io_S3DataGrabber, "outfiles", fsl_BET, "in_file")

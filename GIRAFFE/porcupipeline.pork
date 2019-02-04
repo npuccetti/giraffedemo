@@ -646,7 +646,7 @@
         }
       ],
       "position": [
-        -836.2299194335938,
+        -823.5523071289062,
         -214.52462768554688
       ],
       "title": {
@@ -1049,6 +1049,561 @@
         "name": "afni_TShift",
         "class": "afni.TShift",
         "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.afni/preprocess.html#tshift"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "afni",
+        "utils"
+      ],
+      "ports": [
+        {
+          "base": "in_file",
+          "editable": true,
+          "id": "304f839a-034b-4d4e-aa9f-4396ec02f5aa",
+          "input": true,
+          "inputPort": "b03ed4aa-4112-4903-b4a7-41aefde9db83",
+          "name": "in_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": true,
+          "id": "7b641f14-1a0f-4af3-9dcb-b7e944ed37c2",
+          "input": true,
+          "inputPort": "07da662a-1928-46f8-b9f7-ff9cc9324e1b",
+          "name": "out_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "t2",
+          "editable": true,
+          "id": "202fb2b8-a437-42a8-9cc3-11ef2cd2410e",
+          "input": true,
+          "inputPort": "f1310e25-2962-45ea-aa7c-f858e94e0f04",
+          "name": "t2",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "gm",
+          "editable": true,
+          "id": "22946f6d-002a-447d-9bff-21be4ad8fc5c",
+          "input": true,
+          "inputPort": "9b15afff-0fdb-4a09-ae33-ced8662195e9",
+          "name": "gm",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "urad",
+          "editable": true,
+          "id": "ad42abbc-c04a-4ee6-b599-296830de28c9",
+          "input": true,
+          "inputPort": "2821c830-0524-4d7c-96e5-c263ad51e4e6",
+          "name": "urad",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "scale_file",
+          "editable": true,
+          "id": "63980b37-947d-49fb-9489-aead9fa26216",
+          "input": true,
+          "inputPort": "82127f1f-1176-44b5-82ab-f15b473b6ca6",
+          "name": "scale_file",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "no_duplo",
+          "editable": true,
+          "id": "98759eed-dda5-443d-9c59-60ad7b5b14ee",
+          "input": true,
+          "inputPort": "658bc057-ebcc-447a-bcb4-f594ba0f899d",
+          "name": "no_duplo",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "epi",
+          "editable": true,
+          "id": "1a0346f7-ec00-4275-831c-eb54f70ad408",
+          "input": true,
+          "inputPort": "68b2a5f0-5dfb-44eb-a739-72f629ad19a7",
+          "name": "epi",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "outputtype",
+          "editable": true,
+          "id": "a9c6b18f-60ee-4c93-95f2-e883edd7c266",
+          "input": true,
+          "inputPort": "7ca68dd2-82cc-424e-9c38-3b25d580f935",
+          "name": "outputtype",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "args",
+          "editable": true,
+          "id": "d5ad65a6-c800-4e56-b865-83a96f203465",
+          "input": true,
+          "inputPort": "b436730c-d805-4636-bee4-3151909f5ca3",
+          "name": "args",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "environ",
+          "editable": true,
+          "id": "d0be7463-c297-4ef6-8f97-6b4122adea5a",
+          "input": true,
+          "inputPort": "0017dc1a-2b0c-4d17-ad8f-512dcbc97e2f",
+          "name": "environ",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "terminal_output",
+          "editable": true,
+          "id": "7518f5fc-fe11-435e-9ebb-c9702d6257a4",
+          "input": true,
+          "inputPort": "79e3d932-13d6-425f-b51b-1bedcb130450",
+          "name": "terminal_output",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "a18cca41-b98b-456f-a889-b2df25d0af73",
+          "input": true,
+          "inputPort": "7e70180d-b217-4d54-a45f-34776f7bef26",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "scale_file",
+          "editable": false,
+          "id": "3959b8b9-0c4e-4e01-a257-3a65b2e1f3d8",
+          "input": false,
+          "inputPort": false,
+          "name": "scale_file",
+          "output": true,
+          "outputPort": "e06c61c4-23f1-4e95-9ebe-c9afa42dc83c",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "out_file",
+          "editable": false,
+          "id": "9b30a715-4d09-45bd-9589-7f65a0892b5a",
+          "input": false,
+          "inputPort": false,
+          "name": "out_file",
+          "output": true,
+          "outputPort": "ee8acd64-4a2a-4061-b693-dc6481cad83d",
+          "value": "",
+          "visible": true,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -621.4888834806001,
+        -219.67673396636866
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Wraps command **3dUnifize**",
+            "argument": {
+              "name": "afni.Unifize()",
+              "import": "import nipype.interfaces.afni as afni"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, afni"
+            }
+          }
+        ],
+        "name": "afni_Unifize",
+        "class": "afni.Unifize",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/interfaces.afni/utils.html#unifize"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "io"
+      ],
+      "ports": [
+        {
+          "base": "bucket",
+          "editable": true,
+          "id": "33934052-85d9-4fb6-9105-97e2165a1a83",
+          "input": true,
+          "inputPort": "b9ee305d-1574-4f6b-b24b-13b14d3aadf2",
+          "name": "bucket",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "sort_filelist",
+          "editable": true,
+          "id": "831ae083-4787-4805-875a-9ef0a81d2b66",
+          "input": true,
+          "inputPort": "3eeaec45-c5a6-4fd8-a72c-581ecb68fc92",
+          "name": "sort_filelist",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "template",
+          "editable": true,
+          "id": "68a6d483-cdfa-43be-91d9-36b9636b65a2",
+          "input": true,
+          "inputPort": "22b1b84c-48f8-424c-a75d-1f812c53fdcd",
+          "name": "template",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "anon",
+          "editable": true,
+          "id": "c5c82142-2785-417a-822c-bc447dd24627",
+          "input": true,
+          "inputPort": "3139a985-ef31-4d0e-8cdc-724813e74ce1",
+          "name": "anon",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "region",
+          "editable": true,
+          "id": "5dde8ea2-6341-4bdc-b052-c9b07f80144c",
+          "input": true,
+          "inputPort": "9ca5f962-73e9-41d3-a502-4c1ea70d5530",
+          "name": "region",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bucket_path",
+          "editable": true,
+          "id": "afe3a228-1af9-4ec3-8858-8ba3cf6ea627",
+          "input": true,
+          "inputPort": "312ad03f-2ae0-441f-9131-02513d24daa6",
+          "name": "bucket_path",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "local_directory",
+          "editable": true,
+          "id": "d28ea276-895b-4f41-a3e9-36b58f66932b",
+          "input": true,
+          "inputPort": "8e8913bb-ec23-4805-b944-9249aeea8805",
+          "name": "local_directory",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "raise_on_empty",
+          "editable": true,
+          "id": "649360c4-3106-48f2-a85a-00078e0a45df",
+          "input": true,
+          "inputPort": "a606045d-96ec-4ad3-a949-28ac244a4a1e",
+          "name": "raise_on_empty",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "template_args",
+          "editable": true,
+          "id": "668edcb9-4aca-4ca1-bdc9-01ce14bb0521",
+          "input": true,
+          "inputPort": "99e22ab0-6003-4505-8087-4fbdac492282",
+          "name": "template_args",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "8d598ddb-c939-4c12-9368-ea078cd88a3a",
+          "input": true,
+          "inputPort": "9612f430-b3b4-4ce5-adae-f9e68914c73d",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -1762.4742405517197,
+        -617.0902269052549
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Generic datagrabber module that wraps around glob in an",
+            "argument": {
+              "name": "io.S3DataGrabber()",
+              "import": "import nipype.interfaces.io as io"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, io"
+            }
+          }
+        ],
+        "name": "io_S3DataGrabber_1",
+        "class": "io.S3DataGrabber",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
+      }
+    },
+    {
+      "category": [
+        "Nipype",
+        "io"
+      ],
+      "ports": [
+        {
+          "base": "bucket",
+          "editable": true,
+          "id": "7b7420c6-648c-4c74-8fe0-5f16a840b28d",
+          "input": true,
+          "inputPort": "456fc65e-0127-4bd1-843f-9e4a8e46fe6a",
+          "name": "bucket",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "sort_filelist",
+          "editable": true,
+          "id": "b406d7b2-5f79-4686-91f2-05a5e1237444",
+          "input": true,
+          "inputPort": "65beca00-1002-4a1f-b3a3-4f5403db5bac",
+          "name": "sort_filelist",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "template",
+          "editable": true,
+          "id": "4bf23f10-9521-48ac-aefc-efad7e67c81c",
+          "input": true,
+          "inputPort": "0b4e2553-02b8-4e80-a920-7f8cf4fbe3a9",
+          "name": "template",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": true,
+          "iterator": false
+        },
+        {
+          "base": "anon",
+          "editable": true,
+          "id": "2a366a4f-7651-4cc8-b978-c406f05d2563",
+          "input": true,
+          "inputPort": "7179bf01-f704-4a3d-8759-976a7fb1adce",
+          "name": "anon",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "region",
+          "editable": true,
+          "id": "d2c1cf72-8885-409b-9d57-276875abd3ab",
+          "input": true,
+          "inputPort": "97422c4e-ac9f-4708-99b9-558ca373784c",
+          "name": "region",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "bucket_path",
+          "editable": true,
+          "id": "495c2549-2de1-494b-babe-885bdb9fa102",
+          "input": true,
+          "inputPort": "a821bd81-e469-43ae-a76b-b747f2948e34",
+          "name": "bucket_path",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "local_directory",
+          "editable": true,
+          "id": "bedf7239-9e1b-42fa-87a5-dd0cc22d2b13",
+          "input": true,
+          "inputPort": "653f4a64-c89a-41dc-97e2-d2b766f410f2",
+          "name": "local_directory",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "raise_on_empty",
+          "editable": true,
+          "id": "56121086-bcc3-4172-b59d-b2b963617641",
+          "input": true,
+          "inputPort": "0d677875-7d18-432d-9fa0-cf7803ba5bec",
+          "name": "raise_on_empty",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "template_args",
+          "editable": true,
+          "id": "0ba6af05-5266-4fdc-b27f-e56970d1a0b4",
+          "input": true,
+          "inputPort": "5afb96cd-ac26-4498-b719-601d5c312082",
+          "name": "template_args",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        },
+        {
+          "base": "ignore_exception",
+          "editable": true,
+          "id": "4023610a-6d04-46d1-8a39-835ec5898f35",
+          "input": true,
+          "inputPort": "c41e4df9-4ec1-40ca-a57b-a6b8a51eb983",
+          "name": "ignore_exception",
+          "output": false,
+          "outputPort": false,
+          "value": "",
+          "visible": false,
+          "iterator": false
+        }
+      ],
+      "position": [
+        -1182.4733618049825,
+        -613.9208393519949
+      ],
+      "title": {
+        "code": [
+          {
+            "language": "Nipype",
+            "comment": "Generic datagrabber module that wraps around glob in an",
+            "argument": {
+              "name": "io.S3DataGrabber()",
+              "import": "import nipype.interfaces.io as io"
+            }
+          },
+          {
+            "language": "Docker",
+            "argument": {
+              "name": "Nipype, io"
+            }
+          }
+        ],
+        "name": "io_S3DataGrabber_2",
+        "class": "io.S3DataGrabber",
+        "web_url": "https://nipype.readthedocs.io/en/latest/interfaces/generated/nipype.interfaces.io.html#s3datagrabber"
       }
     }
   ],
