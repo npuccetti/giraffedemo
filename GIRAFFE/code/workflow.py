@@ -29,9 +29,6 @@ afni_TShift = pe.Node(interface = afni.TShift(), name='afni_TShift', iterfield =
 afni_Unifize = pe.Node(interface = afni.Unifize(), name='afni_Unifize', iterfield = [''])
 
 #Generic datagrabber module that wraps around glob in an
-io_S3DataGrabber_1 = pe.Node(io.S3DataGrabber(), name = 'io_S3DataGrabber_1')
-
-#Generic datagrabber module that wraps around glob in an
 io_S3DataGrabber_2 = pe.Node(io.S3DataGrabber(), name = 'io_S3DataGrabber_2')
 
 #Wraps command **fslreorient2std**
@@ -45,6 +42,9 @@ fsl_MCFLIRT = pe.Node(interface = fsl.MCFLIRT(), name='fsl_MCFLIRT', iterfield =
 
 #Wraps command **antsRegistration**
 ants_Registration = pe.Node(interface = ants.Registration(), name='ants_Registration', iterfield = [''])
+
+#Extension of DataGrabber module that downloads the file list and
+io_SSHDataGrabber = pe.Node(interface = io.SSHDataGrabber(), name='io_SSHDataGrabber', iterfield = [''])
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')
